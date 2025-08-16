@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated color tokens to match design brief */
+    --background: #ffffff;
+    --foreground: #1f2937;
+    --card: #f1f5f9;
+    --card-foreground: #1f2937;
+    --popover: #ffffff;
+    --popover-foreground: #1f2937;
+    --primary: #1f2937;
+    --primary-foreground: #ffffff;
+    --secondary: #6b7280;
+    --secondary-foreground: #ffffff;
+    --muted: #f1f5f9;
+    --muted-foreground: #6b7280;
+    --accent: #8b5cf6;
+    --accent-foreground: #ffffff;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --border: #e5e7eb;
+    --input: #f1f5f9;
+    --ring: rgba(139, 92, 246, 0.5);
+    --chart-1: #8b5cf6;
+    --chart-2: #6b7280;
+    --chart-3: #d97706;
+    --chart-4: #1f2937;
+    --chart-5: #f1f5f9;
+    --radius: 0.5rem;
+    --sidebar: #ffffff;
+    --sidebar-foreground: #1f2937;
+    --sidebar-primary: #f1f5f9;
+    --sidebar-primary-foreground: #1f2937;
+    --sidebar-accent: #8b5cf6;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #e5e7eb;
+    --sidebar-ring: rgba(139, 92, 246, 0.5);
+  }
+
+  .dark {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --card: #1e293b;
+    --card-foreground: #f1f5f9;
+    --popover: #1e293b;
+    --popover-foreground: #f1f5f9;
+    --primary: #f1f5f9;
+    --primary-foreground: #1f2937;
+    --secondary: #374151;
+    --secondary-foreground: #f1f5f9;
+    --muted: #374151;
+    --muted-foreground: #9ca3af;
+    --accent: #8b5cf6;
+    --accent-foreground: #ffffff;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --border: #374151;
+    --input: #374151;
+    --ring: rgba(139, 92, 246, 0.5);
+    --chart-1: #8b5cf6;
+    --chart-2: #9ca3af;
+    --chart-3: #d97706;
+    --chart-4: #f1f5f9;
+    --chart-5: #374151;
+    --sidebar: #1e293b;
+    --sidebar-foreground: #f1f5f9;
+    --sidebar-primary: #374151;
+    --sidebar-primary-foreground: #f1f5f9;
+    --sidebar-accent: #8b5cf6;
+    --sidebar-accent-foreground: #ffffff;
+    --sidebar-border: #374151;
+    --sidebar-ring: rgba(139, 92, 246, 0.5);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
